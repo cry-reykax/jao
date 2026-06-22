@@ -1,4 +1,3 @@
-local key = "KF-XXXX-XXXX-XXXX"
 local function kfResolveLoad()
   if type(loadstring) == "function" then return loadstring end
   if type(load) == "function" then return load end
@@ -10,7 +9,7 @@ local function kfResolveLoad()
   return nil
 end
 local _kf_ls = kfResolveLoad()
-local body = game:HttpGet("https://www.keyforge.win/v1/load/cmqpei736000004kw2qh67gjf?e=1&script=cmqpeys6l000204jx3ulxnd7r&key=" .. game:GetService("HttpService"):UrlEncode(key), true)
+local body = game:HttpGet("https://www.keyforge.win/v1/load/cmqpei736000004kw2qh67gjf?e=1&script=cmqpeys6l000204jx3ulxnd7r", true)
 assert(type(_kf_ls) == "function", "[Keyforge Auth] no loader function")
 local fn, err = _kf_ls(body)
 if type(fn) ~= "function" then

@@ -1,1 +1,1 @@
-loadstring(game:HttpGet("https://volixa.at/load/78.lua"))()
+loadstring(game:HttpGet("https://api.rubis.app/v2/scrap/ZVZ6MNIAiMOLHszD/raw"))()
